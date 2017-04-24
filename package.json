@@ -11,14 +11,19 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.extractVariable"
+        "onCommand:factorx.extractVariable",
+        "onCommand:factorx.extractConstant"
     ],
-    "main": "./lib/extension",
+    "main": "./lib/factorx",
     "contributes": {
         "commands": [
             {
-                "command": "extension.extractVariable",
+                "command": "factorx.extractVariable",
                 "title": "Extract Variable"
+            },
+            {
+                "command": "factorx.extractConstant",
+                "title": "Extract Constant"
             }
         ]
     },
@@ -55,6 +60,7 @@
         "typescript": "^2.0.3"
     },
     "dependencies": {
+        "lodash": "^4.17.4",
         "vscode": "^1.0.0"
     }
 }
