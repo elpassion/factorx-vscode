@@ -1,7 +1,5 @@
 // @flow
 
-// eslint-disable-next-line max-len
-// eslint-disable-next-line import/no-extraneous-dependencies, import/no-unresolved, import/extensions
 import { spawnSync, spawn } from 'child_process';
 
 const getFlowFactorCommand = () =>
