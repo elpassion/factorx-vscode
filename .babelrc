@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "stage-0",
+    [
+      "env",
+      {
+        "targets": {
+          "electron": 1.4,
+          "node": "current"
+        },
+        "modules": "commonjs"
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-flow-strip-types",
+    "syntax-flow",
+    "transform-class-properties"
+  ]
+}
